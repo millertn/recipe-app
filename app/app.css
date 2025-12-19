@@ -1,15 +1,46 @@
-@import "tailwindcss";
+
 
 @theme {
+  --color-regal-blue: #243c5a; 
+  --font-roboto: "Roboto", sans-serif;
+
+
+  --color-eucalyptus-500: #9CB6AD;
+  --color-eucalyptus-600: #90B1A5;
+  --color-eucalyptus-700: #84AC9D;
+  --color-eucalyptus-900: #3B5353;
+
+  --color-roasted-peach-500: #E0BDAF;
+
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-avocado-100: oklch(0.99 0 0);
+
+  --color-500-wheat: #ECDBC7,
+  --color-900-wheat: #534D3E,
+
+  --color-brand-primary: #ff5733
+
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@tailwind utilities;
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: var(--color-roasted-peach-500);
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     color-scheme: dark;
-  }
+  } */
 }
+
+div {
+  background-color: var(--color-brand-primary);
+}
+
+div {
+  color: pink;
+  background-color: aliceblue
+}
+
